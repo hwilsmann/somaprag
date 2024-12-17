@@ -199,6 +199,11 @@ ul { list-style: none; }
   right: 2px;
 }
 
+.checkbox .input:checked + .label .-square {
+  background-color: var(--c-light-green);
+  border-color: var(--c-light-green);
+}
+
 .checkbox .input:checked + .label .-square::after { opacity: 1; }
 
 .checkbox .label {
@@ -210,22 +215,25 @@ ul { list-style: none; }
 }
 
 .checkbox .-square {
+  align-items: center;
   border: 1px solid var(--c-dark-gray);
+  display: flex;
   height: calc(50px / 3);
   width: calc(50px / 3);
+  justify-content: center;
   position: relative;
+  transition: background-color var(--transition), border-color var(--transition);
 }
 
 .checkbox .-square::after {
-  background-color: var(--c-light-green);
+  border-bottom: 1px solid var(--c-white);
+  border-right: 1px solid var(--c-white);
   content: "";
-  height: calc(50px / 3 - 8px);
-  width: calc(50px / 3 - 8px);
-  left: 50%;
+  height: calc(50px / 6);
+  width: calc(50px / 10);
   opacity: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: -2px;
+  transform: rotate(45deg);
   transition: opacity var(--transition);
 }
 
