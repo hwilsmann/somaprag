@@ -1,0 +1,32 @@
+.section-login {
+  .login-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .-logo {
+    width: 100%;
+    max-width: 50%;
+  }
+
+  .fieldset { align-items: center; }
+
+  .input-wrapper {
+    align-items: center;
+    border-bottom: 1px solid var(--c-dark-gray);
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(50px / 3);
+    width: 100%;
+  }
+
+  .input-wrapper:focus-within { border-color: var(--c-light-green); }
+  .input-wrapper:focus-within .-icon { fill: var(--c-light-green); }
+
+  .input-wrapper .input {
+    border: none;
+    width: calc(100% - calc(50px / 3) - calc(50px / 3));
+  }
+}

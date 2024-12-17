@@ -1,0 +1,27 @@
+
+.loading {
+    align-items: center;
+    background-color: rgba(63, 63, 63, .6);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    transition: opacity var(--transition), visibility var(--transition);
+    z-index: 3;
+  }
+  
+  .loading.-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loading .spin {
+    animation: spin 1s linear infinite;
+    border: 1px solid var(--c-white);
+    border-radius: 50%;
+    border-top: 1px solid var(--c-light-green);
+    height: calc(50px / 2);
+    width: calc(50px / 2);
+  }
+  

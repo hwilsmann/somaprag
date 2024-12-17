@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  .header-wrapper {
+    align-items: center;
+    background-color: var(--c-light-green);
+    color: var(--c-white);
+    display: flex;
+    gap: calc(50px / 4);
+    justify-content: space-between;
+    padding: calc(50px / 4);
+  }
+
+  .-back { transform: rotate(180deg); }
+
+  .-wave {
+    margin-top: calc(-50px / 4);
+    position: relative;
+    z-index: -1;
+  }
+}

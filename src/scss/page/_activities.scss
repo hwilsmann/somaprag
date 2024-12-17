@@ -1,0 +1,40 @@
+.section-activities {
+  .list-activities {
+    display: grid;
+    grid-gap: calc(50px / 4);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list-activities .item.-light-green .circle { background-color: var(--c-light-green); }
+  .list-activities .item.-dark-green .circle { background-color: var(--c-dark-green); }
+  .list-activities .item.-light-blue .circle { background-color: var(--c-light-blue); }
+  .list-activities .item.-dark-blue .circle { background-color: var(--c-dark-blue); }
+
+  .list-activities .anchor {
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
+    border-radius: calc(50px / 4);
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px / 4);
+    height: 100%;
+    justify-content: space-between;
+    padding: calc(50px / 4);
+    text-align: center;
+  }
+
+  .list-activities .circle {
+    align-items: center;
+    border-radius: 50%;
+    color: var(--c-white);
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+  }
+
+  .list-activities .-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
