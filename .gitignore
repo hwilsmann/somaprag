@@ -65,7 +65,6 @@ web_modules/
 out
 
 .nuxt
-dist
 
 .cache/
 
