@@ -30,6 +30,9 @@ function init_global() {
     if (popup) { popup.classList.remove('-open'); }
   }
 
+  window.open_popup = open_popup;
+  window.close_popup = close_popup;
+
   // Função do Loading
   document.body.classList.add('-loading');
 
