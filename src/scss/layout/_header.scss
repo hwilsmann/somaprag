@@ -12,6 +12,85 @@
     padding: calc(50px / 4);
   }
 
+  .header-wrapper.-supervision {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .header-wrapper.-supervision .top,
+  .header-wrapper.-supervision .bottom {
+    display: flex;
+    width: 100%;
+  }
+
+  .header-wrapper.-supervision .top {
+    justify-content: flex-end;
+    padding: calc(50px / 4);
+    padding-bottom: 0;
+  }
+
+  .header-wrapper.-supervision .bottom { flex-direction: column; }
+
+  .header-wrapper.-supervision .form {
+    align-items: center;
+    display: flex;
+    gap: calc(50px / 4);
+    padding: calc(50px / 4);
+  }
+
+  .header-wrapper.-supervision .dates {
+    display: flex;
+    gap: calc(50px / 2);
+  }
+
+  .header-wrapper.-supervision .dates .input-wrapper { position: relative; }
+
+  .header-wrapper.-supervision .dates .input-wrapper:not(:last-of-type)::before {
+    content: "a";
+    left: calc(100% + 8px);
+    line-height: 1;
+    position: absolute;
+    top: 4px;
+  }
+
+  .header-wrapper.-supervision .dates .input-wrapper:not(:last-of-type)::after {
+    background-color: var(--c-white);
+    content: "";
+    height: 1px;
+    width: 25px;
+    left: 100%;
+    position: absolute;
+    top: 50%;
+  }
+
+  .header-wrapper.-supervision .nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .header-wrapper.-supervision .input-wrapper {
+    align-items: center;
+    border: 1px solid var(--c-dark-gray);
+    border-radius: 999px;
+    display: flex;
+    gap: calc(50px / 3);
+    height: 50px;
+    padding: 0 calc(50px / 2);
+  }
+
+  .header-wrapper.-supervision .input-wrapper.-white { border-color: var(--c-white); }
+  .header-wrapper.-supervision .input { border: none; }
+
+  .header-wrapper.-supervision .nav .anchor {
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 100%;
+    justify-content: center;
+    padding: calc(50px / 4);
+  }
+
+  .header-wrapper.-supervision .nav .anchor.-active { border-color: var(--c-lighten-highlight-green); }
   .-back { transform: rotate(180deg); }
 
   .-wave {

@@ -22,6 +22,7 @@
     width: 100%;
   }
 
+  .input-wrapper.-white { border-color: var(--c-white); }
   .input-wrapper:focus-within { border-color: var(--c-light-green); }
   .input-wrapper:focus-within .-icon { fill: var(--c-light-green); }
 

@@ -1,0 +1,96 @@
+.section-appointments {
+  .appointments-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px / 2);
+  }
+
+  .appointments {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px / 2);
+  }
+  
+  .appointments .date {
+    align-items: center;
+    border: 1px solid var(--c-dark-blue);
+    border-radius: 999px;
+    color: var(--c-dark-blue);
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5em;
+    height: 50px;
+    justify-content: center;
+    line-height: 50px;
+    padding: 0 calc(50px / 2);
+  }
+
+  .details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px / 6);
+    width: 100%;
+  }
+
+  .details[open] .summary { color: var(--c-dark-green); }
+
+  .details .summary {
+    color: var(--c-dark-blue);
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+
+  .details .details-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px / 2);
+    margin: calc(50px / 4);
+    margin-bottom: 0;
+  }
+
+  .details .test {
+    align-items: flex-start;
+    display: flex;
+    gap: calc(50px / 6);
+    position: relative;
+  }
+
+  .details .test::after {
+    background-color: var(--c-dark-blue);
+    content: "";
+    height: 100%;
+    width: 1px;
+    left: calc(50px / 2);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  .details .hour {
+    align-items: center;
+    background-color: var(--c-white);
+    border: 1px solid var(--c-dark-blue);
+    border-radius: 50%;
+    color: var(--c-dark-blue);
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    line-height: 50px;
+  }
+
+  .details .text {
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px / 6);
+  }
+
+  .list-appointments {
+    display: flex;
+    flex-direction: column;
+    gap: calc(50px / 12);
+  }
+
+  .list-appointments .item { color: var(--c-dark-blue); }
+}

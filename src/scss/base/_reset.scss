@@ -88,6 +88,8 @@ input {
   font: inherit;
   height: 50px;
   width: 100%;
+  line-height: 50px;
+  text-overflow: ellipsis;
   transition: border-color var(--transition);
 }
 
@@ -164,12 +166,40 @@ ul { list-style: none; }
   max-width: 1632px;
 }
 
+.-full-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .-gap {
   display: flex;
   flex-direction: column;
   gap: calc(50px / 3);
 }
 
+.-gradient {
+  background-image: linear-gradient(
+    45deg,
+    hsl(208deg 60% 50%) 0%,
+    hsl(200deg 100% 40%) 8%,
+    hsl(198deg 100% 39%) 17%,
+    hsl(196deg 100% 38%) 25%,
+    hsl(193deg 100% 36%) 33%,
+    hsl(188deg 100% 33%) 42%,
+    hsl(183deg 100% 30%) 50%,
+    hsl(175deg 100% 29%) 58%,
+    hsl(168deg 100% 29%) 67%,
+    hsl(159deg 100% 29%) 75%,
+    hsl(151deg 100% 28%) 83%,
+    hsl(125deg 52% 37%) 92%,
+    hsl(95deg 64% 33%) 100%
+  );
+}
+
+.-gradient * { color: var(--c-white); }
+.-gradient .-icon { fill: var(--c-white); }
 .-hidden { display: none; }
 
 .-icon {
@@ -238,7 +268,7 @@ ul { list-style: none; }
 }
 
 .checkbox .-circle {
-  border: 1px solid var(--c-dark-gray);
+  border: 1px solid;
   border-radius: calc(50px / 3);
   height: calc(50px / 3);
   width: 32px;
