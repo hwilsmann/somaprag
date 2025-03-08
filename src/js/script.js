@@ -43,6 +43,8 @@ function init_global() {
       loading.addEventListener('transitionend', () => {
         document.body.classList.remove('-loading');
       }, { once: true });
+    } else {
+      document.body.classList.remove('-loading');
     }
   };
 
