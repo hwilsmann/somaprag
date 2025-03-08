@@ -38,7 +38,7 @@ function html() {
             }
         }))
         .pipe(html_min({ collapseWhitespace: true }))
-        .pipe(dest('dist'))
+        .pipe(dest('./'))
         .pipe(connect.reload())
         .on('end', () => console.log('HTML minificado com sucesso!'));
 }
@@ -76,7 +76,7 @@ async function images() {
 
 function serve(done) {
     connect.server({
-        root: 'dist',
+        root: './',
         livereload: true,
         port: 8080
     });
