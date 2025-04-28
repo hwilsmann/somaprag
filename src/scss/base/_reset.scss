@@ -140,7 +140,7 @@ textarea {
   appearance: none;
   background-color: transparent;
   border: 1px solid var(--c-dark-gray);
-  border-radius: calc(50px / 4);
+  border-radius: calc(50px / 2);
   color: inherit;
   font: inherit;
   width: 100%;
@@ -148,6 +148,8 @@ textarea {
   resize: none;
   transition: border-color var(--transition);
 }
+
+textarea.-rounded { border-radius: 999px; }
 
 textarea:focus {
   border-color: var(--c-light-green);
